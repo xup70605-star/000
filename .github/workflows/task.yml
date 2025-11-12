@@ -37,7 +37,7 @@ jobs:
       - name: Run Gemini to Get Quote and Update JSON
         env:
           # ❗️❗️❗️ 重要：請確保您在 GitHub Secrets 中建立的 Secret 名稱是 GEMINICLI_KEY
-          GEMINI_API_KEY: ${{ secrets.GEMINICLI_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_KEY }}
         run: |
           # A. 取得台北時區的當前日期 (格式：YYYY-MM-DD)
           # 為了和 commit message 格式一致
